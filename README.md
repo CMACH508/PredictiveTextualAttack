@@ -291,4 +291,4 @@ python greedy.py --device cuda --dataset_path resources/datasets/bert_original/i
 
 ## Acknowledgement
 
-This repository used some codes in [TextFooler](https://github.com/QData/TextAttack).
+This repository used some codes in [TextAttack](https://github.com/QData/TextAttack).
