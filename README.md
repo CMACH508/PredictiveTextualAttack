@@ -292,3 +292,17 @@ python greedy.py --device cuda --dataset_path resources/datasets/bert_original/i
 ## Acknowledgement
 
 This repository used some codes in [TextAttack](https://github.com/QData/TextAttack).
+
+## Citation
+
+If you find this repo usefule, please cite our paper:
+
+```
+@inproceedings{learning_to_attack,
+ title = {Learning to Generate Textual Adversarial Examples},
+ author = {Xiangzhe, Guo  and Shikui, Tu  and Lei, Xu},
+ booktitle = {The 31st International Conference on Artificial Neural Networks},
+ year = {2022}
+}
+```
+
