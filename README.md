@@ -215,6 +215,43 @@ For example, to train the synonym selection network for BERT victim model on the
 python attack.py train_candidate_selection_module --device cuda --encoder_path resources/encoder_models/bert --train_data_path resources/datasets/bert_train/imdb.json --module_path results/prediction/imdb/bert/synonym_selection_network --sim_threshold 0.95 --ppl_proportion 0.8 --hidden_dim 128 --num_classes 2 --num_epochs 5 --batch_size 5
 ```
 
+#### PretrainedModels
+
+We have provided the pretrained models, which can be downloaded from this [link](https://drive.google.com/file/d/1SkBc3oMuainjIXsJsiAhTRl14QYlSNKi/view?usp=sharing).
+
+When extracted, the directory structure should be like the following, and the directory name format is `{dataset}/{victim_model}`.
+
+```
+├── imdb
+│   ├── bert
+│   │   ├── synonym_selection_network
+│   │   │   ├── pytorch_model.bin
+│   │   │   └── train_args.json
+│   │   └── word_ranking_network
+│   │       ├── pytorch_model.bin
+│   │       └── train_args.json
+│   └── lstm
+│       ├── synonym_selection_network
+│       │   ├── pytorch_model.bin
+│       │   └── train_args.json
+│       └── word_ranking_network
+│           ├── pytorch_model.bin
+│           └── train_args.json
+├── qqp
+│   └── bert
+│       └── ...
+├── snli
+│   └── bert
+│       └── ...
+└── yelp
+    ├── bert
+    │   └── ...
+    └── lstm
+        └── ...
+```
+
+
+
 ### Evaluation
 
 For evaluation, run the following command:
