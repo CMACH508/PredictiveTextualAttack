@@ -250,8 +250,6 @@ When extracted, the directory structure should be like the following, and the di
         └── ...
 ```
 
-
-
 ### Evaluation
 
 For evaluation, run the following command:
@@ -288,7 +286,7 @@ Options:
 --output_path: the output path, e.g., results/prediction/imdb/bert
 ```
 
-For example, to train the synonym selection network for BERT victim model on the Imdb dataset:
+For example, to evaluate the attack against BERT model on the IMDB dataset:
 
 ```
 python attack.py test --device cuda --encoder_path resources/encoder_models/bert --dataset_path resources/datasets/bert_original/imdb.json --gpt_path resources/encoder_models/gpt2 --hidden_dim 128 --num_classes 2 --top_k 15 --sim_threshold 0.9 --victim_model_path resources/victim_models/bert-imdb --candidate_selection_module_path results/prediction/imdb/bert/synonym_selection_network/pytorch_model.bin --word_ranking_module_path results/prediction/imdb/bert/word_ranking_network/pytorch_model.bin --output_path results/prediction/imdb/bert
@@ -332,7 +330,7 @@ This repository used some codes in [TextAttack](https://github.com/QData/TextAtt
 
 ## Citation
 
-If you find this repo usefule, please cite our paper:
+If you find this repo useful, please cite our paper:
 
 ```
 @inproceedings{learning_to_attack,
